@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_REDIRECT_URL= 'home'
 
 
-
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
