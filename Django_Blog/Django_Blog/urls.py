@@ -3,6 +3,7 @@ from django.urls import path, include
 from user import views as user_views
 from django.contrib.auth.views import LoginView, LogoutView
 from Postapp import urls as postappurls
+from Postapp.views import about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -12,6 +13,7 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(template_name='user/logout.html'), name='logout'),
     path('profile/', user_views.Profile, name='profile'),
     path('profileedit/', user_views.Edit_Profile, name='profileedit'),
+    path('about/', about, name='about'),
     
 ]
 

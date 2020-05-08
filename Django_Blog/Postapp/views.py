@@ -11,6 +11,10 @@ class Home(ListView):
     context_object_name = 'posts'
     template_name = 'Postapp/home.html'
 
+def about(request):
+
+    return render(request, template_name='Postapp/about.html')
+
 
 class DetailPost(LoginRequiredMixin, DetailView):
     model = Post
