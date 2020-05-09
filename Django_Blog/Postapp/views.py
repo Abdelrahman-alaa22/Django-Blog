@@ -11,7 +11,7 @@ class Home(ListView):
     model = Post
     context_object_name = 'posts'
     template_name = 'Postapp/home.html'
-    ordering = '-date_posted'
+    
 
 
 
