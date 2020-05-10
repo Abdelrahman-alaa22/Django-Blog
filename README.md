@@ -7,7 +7,7 @@ Sing up, Login.
 For local development:
 
 Django
-sqlite3
+PostgreSQL
 
 
 Heroku: https://djangoblog-app.herokuapp.com/
